@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:d="http://schemas.microsoft.com/dotnet/2021/maui/design"
-             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-             mc:Ignorable="d"
-             BackgroundColor="{DynamicResource PageBackgroundColor}">
-    <StackLayout>
-        <Label Text="انجام دادن تکلیف برنامه نویسی" />
-        <Label Text=" مطالعه روانشناسی بالینی" />
-        <Label Text="مطالعه زبان" />
-    </StackLayout>
+             x:Class="Task1.pages.Tasks"
+             Title="Tasks">
+    <VerticalStackLayout>
+        <StackLayout Margin="20">
+            <Label Text="صفحه وظیفه ها" FontSize="24" TextColor="DarkBlue" HorizontalOptions="Center" Margin="0,20,0,10"/>
+            <Label Text="مطالعه روانشناسی بالینی" FontSize="18" TextColor="Black" Margin="0,0,0,10"/>
+            <Label Text="مطالعه زبان" FontSize="18" TextColor="Black" Margin="0,0,0,10"/>
+            <Label Text="انجام تکلیف برنامه نویسی موبایل" FontSize="18" TextColor="Black" Margin="0,0,0,10"/>
+            <Button Text="بازگشت به عقب" Clicked="OnBackButtonClicked" HorizontalOptions="FillAndExpand" VerticalOptions="End"/>
+        </StackLayout>
+    </VerticalStackLayout>
 </ContentPage>

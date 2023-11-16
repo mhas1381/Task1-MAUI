@@ -11,6 +11,7 @@
         <Entry x:Name="txtInput" Placeholder="وظیفه را وارد کنید" />
         <Button Text="نمایش وظیفه" Clicked="btnShowText_Click" />
         <Label x:Name="lblResult" Text=""/>
+        <Button Text="بازگشت به عقب" Clicked="OnBackButtonClicked" HorizontalOptions="FillAndExpand" VerticalOptions="End"/>
     </StackLayout>
 
 </ContentPage>

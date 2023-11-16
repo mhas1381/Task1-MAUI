@@ -11,4 +11,9 @@ public partial class AddTask : ContentPage
         string userInput = txtInput.Text;
         lblResult.Text = "متن وارد شده: " + userInput;
     }
+    private void OnBackButtonClicked(object sender, EventArgs e)
+    {
+        Navigation.PushModalAsync(new HomePage());
+
+    }
 }

@@ -6,4 +6,9 @@ public partial class Tasks : ContentPage
 	{
 		InitializeComponent();
 	}
+    private void OnBackButtonClicked(object sender, EventArgs e)
+    {
+        Navigation.PushModalAsync(new HomePage());
+
+    }
 }
