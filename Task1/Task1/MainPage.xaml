@@ -3,6 +3,13 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Task1.MainPage">
 
+    <ContentPage.Resources>
+        <x:String x:Key="TextHello">سلام خوش آمدید !</x:String>
+        <x:String x:Key="TextIntro">این یک برنامه مدیریت وظایف است.</x:String>
+        <x:String x:Key="TextAddTask" >اضافه کردن وظیفه</x:String>
+        <x:String x:Key="TextTasks" >لیست وظیفه ها</x:String>
+    </ContentPage.Resources>
+
     <ScrollView>
         <VerticalStackLayout
             Spacing="25"
@@ -16,13 +23,13 @@
                 HorizontalOptions="Center" />
 
             <Label
-                Text="سلام خوش آمدید !"
+                Text="{Binding Source={x:StaticResource TextHello}} "
                 SemanticProperties.HeadingLevel="Level1"
                 FontSize="32"
                 HorizontalOptions="Center" />
 
             <Label
-                Text="این یک برنامه مدیریت وظایف است ."
+                Text="{Binding Source={x:StaticResource TextIntro}} "
                 SemanticProperties.HeadingLevel="Level2"
                 SemanticProperties.Description="Welcome to dot net Multi platform App U I"
                 FontSize="18"
@@ -30,14 +37,14 @@
 
             <Button
                 x:Name="ShowTasks"
-                Text="دیدن وظایف"
+                Text="{Binding Source={x:StaticResource TextTasks}} "
                 SemanticProperties.Hint="Counts the number of times you click"
 
                 HorizontalOptions="Center" />
 
             <Button
                 x:Name="AddTask"
-                Text="اضافه کردن وظیفه"
+                Text="{Binding Source={x:StaticResource TextAddTask}} "
                 SemanticProperties.Hint="Counts the number of times you click"
 
                 HorizontalOptions="Center" />
