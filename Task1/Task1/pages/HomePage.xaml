@@ -38,15 +38,12 @@
             <Button
                 x:Name="ShowTasks"
                 Text="{Binding Source={x:StaticResource TextTasks}} "
-                SemanticProperties.Hint="Counts the number of times you click"
-
+                Clicked="Button_Clicked"
                 HorizontalOptions="Center" />
 
             <Button
                 x:Name="AddTask"
                 Text="{Binding Source={x:StaticResource TextAddTask}} "
-                SemanticProperties.Hint="Counts the number of times you click"
-
                 HorizontalOptions="Center" />
 
         </VerticalStackLayout>
