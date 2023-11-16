@@ -16,23 +16,30 @@
                 HorizontalOptions="Center" />
 
             <Label
-                Text="Hello, World!"
+                Text="سلام خوش آمدید !"
                 SemanticProperties.HeadingLevel="Level1"
                 FontSize="32"
                 HorizontalOptions="Center" />
 
             <Label
-                Text="Welcome to .NET Multi-platform App UI"
+                Text="این یک برنامه مدیریت وظایف است ."
                 SemanticProperties.HeadingLevel="Level2"
                 SemanticProperties.Description="Welcome to dot net Multi platform App U I"
                 FontSize="18"
                 HorizontalOptions="Center" />
 
             <Button
-                x:Name="CounterBtn"
-                Text="Click me"
+                x:Name="ShowTasks"
+                Text="دیدن وظایف"
                 SemanticProperties.Hint="Counts the number of times you click"
-                Clicked="OnCounterClicked"
+
+                HorizontalOptions="Center" />
+
+            <Button
+                x:Name="AddTask"
+                Text="اضافه کردن وظیفه"
+                SemanticProperties.Hint="Counts the number of times you click"
+
                 HorizontalOptions="Center" />
 
         </VerticalStackLayout>
