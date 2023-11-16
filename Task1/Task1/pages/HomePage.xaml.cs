@@ -11,5 +11,9 @@ public partial class HomePage : ContentPage
         await Navigation.PushModalAsync(new AddTask());
 
     }
+    private async void Button_Clicked1(object sender, EventArgs e)
+    {
+        await Navigation.PushModalAsync(new Tasks());
 
+    }
 }

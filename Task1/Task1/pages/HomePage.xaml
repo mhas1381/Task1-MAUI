@@ -44,6 +44,7 @@
             <Button
                 x:Name="AddTask"
                 Text="{Binding Source={x:StaticResource TextAddTask}} "
+                Clicked="Button_Clicked1"
                 HorizontalOptions="Center" />
 
         </VerticalStackLayout>
